@@ -8,15 +8,15 @@ public class Main {
 
         DisplayName displayName = new DisplayName();
 
-        Shape circle = new Circle();
+        Shape circle = new Circle(new Point[1]);
         displayName.printName(circle);
-        Shape pentagon = new Pentagon();
+        Shape pentagon = new Pentagon(new Point[5]);
         displayName.printName(pentagon);
-        Shape quad = new Quad();
+        Shape quad = new Quad(new Point[4]);
         displayName.printName(quad);
-        Shape rectangle = new Rectangle();
+        Shape rectangle = new Rectangle(new Point[4]);
         displayName.printName(rectangle);
-        Shape triangle = new Triangle();
+        Shape triangle = new Triangle(new Point[3]);
         displayName.printName(triangle);
 
     }

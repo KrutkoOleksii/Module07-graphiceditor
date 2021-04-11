@@ -3,8 +3,16 @@ package editor;
 public abstract class Shape {
     private String name;
     private Point[] points;
-    private Point center;
-    private int Radius;
 
-    public abstract String printName() ;
+    public Shape(String name, Point[] points) {
+        this.name = name;
+        this.points = points;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public abstract String printName();
+
 }
